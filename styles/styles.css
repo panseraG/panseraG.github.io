@@ -580,7 +580,12 @@ p {
         /* Imagem ocupa toda a largura em telas muito pequenas */
     }
 
-    
-      
+    @media (max-width: 390px) {
+        .pserv {
+          
+          font-size: 5px !important; /* Tamanho menor */
+          text-align: left !important;
+        }
+      }
 
 }
