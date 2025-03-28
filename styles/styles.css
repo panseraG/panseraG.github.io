@@ -1,3 +1,4 @@
+HEAD
 /* Estilos globais */
 body {
     font-family: Arial, sans-serif;
@@ -588,4 +589,596 @@ p {
         }
       }
 
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #479560c1;
+    color: white;
+    padding: 10px 10px;
+    /* Corrigido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 135px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+.iconinsta:hover {
+
+    opacity: 0.8;
+}
+
+.secao {
+    position: relative; /* Necessário para o ::after */
+    background-color: #47956086;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Garante que a textura não vaze */
+}
+
+
+.secao::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('tc2.jpg'); 
+    opacity: 0.03; /* Ajuste a transparência da textura */
+    z-index: 0; /* Fica abaixo do conteúdo */
+}
+
+.titulo {
+    z-index: 1000;
+    font-size: 50px;
+    color: #537034;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    /* Espaço abaixo do título */
+
+}
+
+.fotodr {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -100px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    z-index: 1000;
+}
+
+.conteudo {
+    font-size: 18px;
+    z-index: 1000;
+    background-color: #479560a6;
+    padding: 20px;
+    border-radius: 40px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pcont{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.icon1{
+margin-top: -30px;
+}
+
+
+
+.servicos {
+    background-color: #f2574992;
+    position: relative;
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    /* Evita que o conteúdo transborde */
+}
+
+.pserv{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.servicos::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('tc2.jpg'); 
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.titulo-servico {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 40px;
+    /* Adiciona espaço abaixo do título */
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Usa auto-fit em vez de auto-fill */
+    gap: 80px;
+    padding: 20px;
+    justify-items: center;
+    z-index: 2;
+    max-width: 1200px;
+    /* Limita a largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza o container */
+}
+
+.servico {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 100%;
+    /* Garante que o item ocupe toda a largura da coluna */
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 100;
+    color: #537034;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.2;
+    /* Ajusta o espaçamento entre as linhas */
+}
+
+h1 span {
+    display: block;
+    /* Quebra "DE CONTO" para a próxima linha */
+}
+
+p {
+    font-size: 20px;
+    color: #537034;
+    margin-top: 20px;
+}
+
+.quemsou {
+    position: relative;
+    background-color: #d8af8c6d;
+    padding: 60px 20px;
+    /* Reduzi o padding para telas menores */
+    background-size: cover;
+    background-position: center;
+}
+
+.pquem{
+    color: #537034;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+}
+
+.titulo-quemsou {
+    font-size: 50px;
+    /* Tamanho maior para o título */
+    font-weight: 100;
+    color: #537034;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Espaço abaixo do título */
+}
+
+.cntd {
+    display: flex;
+    flex-direction: row;
+    /* Layout padrão: lado a lado */
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    /* Limita a largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
+    padding: 0 20px;
+    /* Adiciona padding lateral */
+}
+
+.texto {
+    flex: 1;
+    font-size: 18px;
+    /* Tamanho da fonte ajustado */
+    color: #537034;
+    line-height: 1.6;
+    /* Melhora a legibilidade */
+}
+
+.Draq {
+    margin-top: 10px;
+    flex: 0 0 auto;
+    max-width: 40%;
+    /* Controla o tamanho da imagem */
+}
+
+.Draq img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+}
+
+.quemsou::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.rodape-completo {
+    background-color: #537034;
+    color: rgb(255, 255, 255);
+    padding: 40px 20px 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.direitostitle{
+    color:white
+}
+
+.container-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.direitos-autorais {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/* Botão Flutuante do WhatsApp (substitui o anterior) */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px; /* Largura maior */
+    height: 80px; /* Altura maior */
+    z-index: 1000;
+    animation: pulse 2s infinite;
+    transition: all 0.3s;
+}
+
+.whatsapp-float img {
+    width: 100% !important; /* Força ocupar todo o espaço */
+    height: auto;
+}
+
+/* Efeito de pulsar mais pronunciado */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); } /* Aumenta o pulso */
+    100% { transform: scale(1); }
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-float:hover {
+    transform: scale(1.1) rotate(5deg);
+    animation: none; /* Pausa a animação no hover */
+}
+
+
+
+/* Estilo para a seção do mapa */
+.mapa {
+    position: relative; /* Necessário para o ::after */
+    background-color: #47956086;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Garante que a textura não vaze */
+}
+
+.mapa::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('tc2.jpg'); 
+    opacity: 0.03; /* Ajuste a transparência da textura */
+    z-index: 0; /* Fica abaixo do conteúdo */
+}
+
+/* Estilo para o título da seção */
+.mapatitle {
+    position: relative; /* Garante que o link fique acima de outros elementos */
+    z-index: 10; 
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    cursor: pointer; /* 👈 Garante o cursor de mão */
+    text-decoration: none; /* 👈 Remove sublinhado (se quiser) */
+}
+
+/* Efeito visual ao clicar (opcional) */
+.mapatitle:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mapatitle:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o iframe do mapa */
+.mapa iframe {
+    width: 100%;
+    max-width: 800px;
+    /* Define uma largura máxima para o mapa */
+    height: 400px;
+    /* Altura do mapa */
+    border: none;
+    margin: 20px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  
+    z-index: 1000;  
+}
+
+/* Estilo para a seção do endereço */
+.endereco {
+    margin-top: 20px;
+    /* Espaçamento acima do endereço */
+}
+
+.endereco h2 {
+    color: #ffffff;
+    font-size: 20px;
+    /* Tamanho do título do endereço */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do título */
+}
+
+.endereco p {
+    color: #ffffff;
+    font-size: 16px;
+    /* Tamanho do texto */
+    margin: 5px 0;
+    /* Espaçamento entre os parágrafos */
+}
+
+.endereco a {
+    color: white;
+    /* Cor do link */
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
+
+.endereco a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .logo img {
+        width: 100px;
+    }
+
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+
+    header {
+        padding: 5px;
+        flex-direction: row;
+        /* Itens um ao lado do outro */
+        flex-wrap: wrap;
+        /* Permite que os itens se ajustem em várias linhas se necessário */
+    }
+
+    header {
+        flex: 1 1 auto;
+        /* Faz com que os itens se ajustem ao espaço disponível */
+        text-align: center;
+    }
+
+    .titulo {
+        z-index: -10;
+        font-size: 50px;
+        /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .fotodr {
+        max-width: 100%;
+        /* A imagem ocupa toda a largura em telas pequenas */
+    }
+
+    .conteudo {
+        font-size: 16px;
+        /* Reduz o tamanho da fonte */
+        padding: 15px;
+        /* Reduz o padding interno */
+    }
+
+
+    .servico {
+        width: 60%;
+        margin: 10px auto;
+        padding: 49px;
+        aspect-ratio: 1 / 1;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .quemsou {
+        padding: 40px 10px;
+        /* Reduz o padding em telas menores */
+    }
+
+    .titulo-quemsou {
+        font-size: 40px;
+        /* Reduz o tamanho do título em telas menores */
+        margin-bottom: 20px;
+    }
+
+    .cntd {
+        flex-direction: column;
+        /* Empilha o conteúdo em telas menores */
+        align-items: center;
+        /* Centraliza o conteúdo */
+        gap: 30px;
+        /* Aumenta o espaço entre texto e imagem */
+    }
+
+    .texto {
+        font-size: 16px;
+        /* Reduz o tamanho da fonte em telas menores */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    .Draq {
+        max-width: 80%;
+        /* Aumenta o tamanho da imagem em telas menores */
+    }
+
+    .mapatitle {
+        font-size: 90%;
+    }
+
+    .mapa {
+        background-color: #58703ec1;
+        height: 800px;
+    }
+
+    .mapa iframe {
+        max-width: 100%;
+        height: 400px
+            /* Reduz a altura do mapa em telas menores */
+
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .titulo-quemsou {
+        font-size: 32px;
+        /* Título ainda menor para telas muito pequenas */
+    }
+
+    .texto {
+        font-size: 14px;
+        /* Fonte menor para telas muito pequenas */
+    }
+
+    .Draq {
+        max-width: 100%;
+        /* Imagem ocupa toda a largura em telas muito pequenas */
+    }
+
+    @media (max-width: 390px) {
+        .pserv {
+          
+          font-size: 5px !important; /* Tamanho menor */
+          text-align: left !important;
+        }
+      }
+
+    }
 }
